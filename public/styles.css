@@ -41,10 +41,12 @@ div.links a:hover {
 
 /* about */
 section.about {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(90deg, rgba(38,54,171,1) 0%, rgba(208,208,208,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 60px;
 }
 
 section.about div.description {
@@ -69,6 +71,12 @@ section.about div.description p {
 
 section.about div.techs {
     text-align: left;
+}
+
+div.techs div.images-techs img {
+    width: 86px;
+    height: 86px;
+    padding: 0 20px 0 0;
 }
 
 section.about div.techs h1 {

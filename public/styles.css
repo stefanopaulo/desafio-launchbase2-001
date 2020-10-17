@@ -176,6 +176,13 @@ div.modal a.close-modal {
     cursor: pointer;
 }
 
+/* modal.active */
+
+div.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* iframe */
 iframe {
     width: 100%;

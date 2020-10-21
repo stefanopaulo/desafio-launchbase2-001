@@ -17,7 +17,7 @@ module.exports = [
 
     {
         id: 'obtendo-o-status-de-progresso-do-envio-de-dados-com-axios',
-        title: 'Axios - um cliente HTTP Full Stack',
+        title: 'Obtendo o status de progresso do envio de dados com Axios',
         img_url: 'https://blog.rocketseat.com.br/content/images/2020/10/obtendo-o-status-de-progresso-do-envio-de-dados-com-axios.png',
         author: 'Thiago Marinho',
         time_reading: '4 min de leitura'

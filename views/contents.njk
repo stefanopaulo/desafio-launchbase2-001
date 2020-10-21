@@ -1,0 +1,50 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block links %}
+    <a href="/">Sobre</a>
+    <a href="#">Conteúdos</a>
+{% endblock %}
+
+{% block content %}
+
+    <section class="contents">
+        <h1>Conteúdos</h1>
+
+            <div class="cards">
+                {% for item in items %}
+                        <div class="card" id="{{item.id}}">
+                            <div class="card-title">
+                                <h1>{{item.title}}</h1>
+                            </div>
+
+                            <div class="card-image">
+                                <img src="{{item.img_url}}" alt="{{item.title}}">
+                            </div>
+                            
+                            <div class="card-author">
+                                <p class="author">{{item.author}}</p>
+                                <p class="read">{{item.time_reading}}</p>
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}
